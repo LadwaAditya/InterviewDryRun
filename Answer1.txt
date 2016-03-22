@@ -1,0 +1,7 @@
+Question 1 - What’s your favorite tool or library for Android? Why is it so useful?
+
+Glide is my favourite library that I use in almost every Android Project
+
+Glide is an Image loading library recommended by Google. Glide is a image loading library that have features such as image, video or animated GIF loading, memory management of the images, decoding the images, resource pooling, caching.
+
+Glide is open source and has an excellent documentation which was easy for me to get started. Glide has a fluent API and image loading can be achieved by just writing a few lines of code. Glide was written by Sam Judd and is open-sourced and have over 34 contributors. It is licensed under BSD, part MIT and Apache 2.0.
