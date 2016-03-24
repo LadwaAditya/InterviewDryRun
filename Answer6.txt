@@ -4,3 +4,13 @@ Question 6 - What are your thoughts about Fragments? Do you like or hate them? W
 Fragments are components that represent behaviour or a certain portion of user interface that we might want to abstract out.
 
 Fragments are reusable components that are extensively used for dynamic UI management based on screen size(Multi-Pane Layout)
+
+Personally, I love and also hate to use Fragments for the following reasons
+
+Why I love them 
+ *They are reusable components 
+ *Excellent for creating dynamic UI
+ 
+The reasons I hate to use fragments
+ *Hard to manage the back-stack of the Fragments
+ *Communicating back to the activity from the fragment requires us to create an interface which i think is a lot of code for just to get a few things work
