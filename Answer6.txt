@@ -1,0 +1,6 @@
+Question 6 - What are your thoughts about Fragments? Do you like or hate them? Why?
+
+
+Fragments are components that represent behaviour or a certain portion of user interface that we might want to abstract out.
+
+Fragments are reusable components that are extensively used for dynamic UI management based on screen size(Multi-Pane Layout)
