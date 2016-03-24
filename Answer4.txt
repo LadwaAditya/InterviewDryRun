@@ -1,3 +1,21 @@
 Question 4 - List and explain the differences between four different options you have for saving data while making an Android app. Pick one, and explain (without code) how you would implement it.
 
 
+The 4 different ways to save data while making an Android App are as follows
+
+1) Using SharedPreferences 
+
+Shared Preferences are typically used to store key value pairs such as user setting. Shared Preferences can be used to store data such user-name, their preferences, App settings etc. 
+
+2) Using File storage
+
+Files can be created in internal or External storage of an Android device to store data such as images, text files, or documents. Files are used to store large amount of data. 
+
+
+3) Using a database(SQLite)
+
+A database can be used to store structured data such as details of user, details of a movie (as I did in PopularMovies Project). Structured data can be accessed faster as compared to Files. A database moreover allows us to store data in more structured way and can be used to provide search feature within the app. Also databases enforce data integrity and reduces data redundancy
+
+4) Using a cloud or sever
+
+A cloud or server can be used to store data in a remote location. This requires an active Data connection. Storing data in cloud provides added benefit such as data security and robustness. Data will be retained even if the user uninstalls the app as because data is stored in a remote server. Also this type of saving data can require lot of bandwidth and can cost more to users on a metered data plan 
