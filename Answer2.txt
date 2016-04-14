@@ -1,0 +1,27 @@
+Question 2 - You want to open a map app from an app that you’re building. The address, city, state, and ZIP code are provided by the user. What steps are involved in sending that data to a map app?
+
+Android offers Intents to communicate between Apps. More precisely we use implicit Intents to provide the Address data to the maps app.
+
+These are the steps to be followed to achieve solution to the above problem
+
+1) First create a String URI to pass the address 
+
+String uri = "geo:0,0?q=ZIP+city+state";
+
+2) Create an Intent with ACTION_VIEW action and the URI as the second parameter to the Intent
+
+Intent intent = new Intent(android.content.Intent.ACTION_VIEW, Uri.parse(uri));
+
+3) Start the activity passing the intent
+
+startActivity(intent);
+
+
+All wrapped in afunction
+
+public void startMapActivity()
+{
+	String uri = "geo:0,0?q=ZIP+city+state";
+	Intent intent = new Intent(android.content.Intent.ACTION_VIEW, Uri.parse(uri));
+	startActivity(intent);
+}
