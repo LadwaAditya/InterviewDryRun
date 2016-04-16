@@ -1,0 +1,43 @@
+Question 3 - Implement a method to perform basic string compression using the counts of repeated characters. For example, the string aabcccccaaa would become a2b1c5a3. If the "compressed" string would not become smaller than the original string, your method should return the original string. The method signature is: “public static String compress(String input)” You must write all code in proper Java, and please include import statements for any libraries you use.
+
+
+
+
+public class StringMagic {
+
+    public static void main(String[] args) {
+        compress("aabcccccaaa");
+    }
+
+
+    public static String compress(String input) {
+        input = input.trim(); // Trim to Avoid Whitespaces
+        int len = input.length(); // Find length of input string to loop through
+
+        String compressed = "";
+        int count = 0; //Variable to count no of concurrence of a character
+        char current; // Variable to hold the  Current Character
+        for (int i = 0; i < len; i++) {
+
+
+            current = input.charAt(i); // Obtain the character at the index
+
+            //Compare it with the next character also check we are within the bounds of the string length
+            if (i < len - 1 && current == input.charAt(i + 1))
+                count++;
+            else {
+                // Concatenate the char with the number of occurrence
+                compressed = compressed.concat(input.charAt(i) + String.valueOf(count + 1));
+                count = 0; // Reset the counter
+            }
+
+        }
+
+        //Check if the compressed string size has decreased
+        if (compressed.length() > len)
+            compressed = input;
+
+        System.out.println(compressed);
+        return compressed;
+    }
+}
